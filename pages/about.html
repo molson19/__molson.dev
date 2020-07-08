@@ -6,10 +6,25 @@
   <meta http-equiv=X-UA-Compatible content="IE=edge">
   <meta name=viewport content="width=device-width,initial-scale=1">
   <title>__molson.dev.io</title>
-  <link href=/index.css rel=stylesheet>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href=/style.css rel=stylesheet>
   <script src=/script.js></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+  <script>
+    $(function () {
+      $("#header").load("../header.html");
+      $("#footer").load("../footer.html");
+    });
+  </script>
 </head>
 
 <body>
+  <div id="header"></div>
+  <!--Remaining section-->
   About page...
+  <div id="footer"></div>
 </body>
+
+</html>
