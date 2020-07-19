@@ -14,19 +14,73 @@
         </script>
     <script>
         $(function () {
-            $("#header").load("header.html");
+            $("#nav").load("nav.html");
             $("#footer").load("footer.html");
         });
     </script>
 </head>
 
 <body>
-    <div id="header"></div>
-    <h1 title="Header">Michael Olson</h1>
-    <h3 title="description">An engineer's journey into software development.</h3>
-    <p>My name is Michael Olson. I'm an engineer.</p>
-    <!--Remaining section-->
-    <div id="footer"></div>
+    <div class="container">
+        <header>
+            <div class="menu-bar">
+                <h1 title="Header" class="name-logo"><a href="./index.html">Michael Olson</a></h1>
+                <h1 class="menu-links">
+                    <a href="https://twitter.com/__molson"><i class="media-icon fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/michael-olson/"><i class="media-icon fa fa-linkedin"></i></a>
+                    <a href="mailto:olsonmichael233@gmail.com"><i class="media-icon fa fa-envelope"></i></a>
+                    <i class="media-icon fa fa-bars"></i>
+                </h1>
+            </div>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./pages/about.html">About</a>
+                <a href="./pages/blogs.html">Blog</a>
+                <a href="./pages/tutorials.html">Tutorials</a>
+            </nav>
+        </header>
+        <main>
+            <h3 title="description">An engineer's journey into software development.</h3>
+            <p>My name is Michael Olson. I'm an engineer.</p>
+            <p>My name is Michael Olson. I'm an engineer. My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer. My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer. My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+                My name is Michael Olson. I'm an engineer.
+
+                My name is Michael Olson. I'm an engineer.
+            </p>
+            <!--Remaining section-->
+        </main>
+        <aside>
+            <h2>sidebar</h2>
+            <p>related content</p>
+        </aside>
+        <footer class="footer">
+            <a href="https://twitter.com/__molson"><i class="media-icon fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/michael-olson/"><i class="media-icon fa fa-linkedin"></i></a>
+            <a href="mailto:olsonmichael233@gmail.com"><i class="media-icon fa fa-envelope"></i></a>
+        </footer>
+    </div>
 </body>
 
 </html>

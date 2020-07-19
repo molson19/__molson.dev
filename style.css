@@ -1,16 +1,109 @@
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
+  color: black;
   background-color: antiquewhite;
-  font-family: verdana;
-  margin: 0px;
+  font-family: helvetica, arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: aqua;
 }
 
 nav {
   background-color: peachpuff;
 }
 
-footer {
+/* footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 2.5rem;
+} */
+
+/* Add padding to all of the .container child elements
+.container > * {
+  padding: 20px;
+} */
+
+.container {
+  color: white;
+  font-family: helvetica, arial, sans-serif;
+  display: grid;
+  grid-template-rows: 4;
+  grid-template-columns: 12;
+}
+
+header {
+  display: grid;
+  background: skyblue;
+  border: 1px solid black;
+  justify-content: center;
+  grid-column: 1 / 12;
+  order: 1;
+}
+
+.name-logo {
+  padding: 10px;
+}
+
+.menu-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  background: slategray;
+  border: 1px solid black;
+  grid-column: 1 / 10;
+  order: 3;
+}
+
+nav {
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-evenly;
+  align-items: center;
+  background: cadetblue;
+}
+
+nav a {
+  flex: 1 1 auto;
+  text-align: center;
+  line-height: normal;
+}
+
+aside {
+  grid-column: 10 / 12;
+  border: 1px solid black;
+  order: 4;
+}
+
+footer {
+  grid-column: 1 / 12;
+  border: 1px solid black;
+  order: 5;
+  justify-content: center;
+  display: flex;
+  padding: 25px;
+  justify-content: space-evenly;
+}
+
+footer a {
+  align-self: center;
+}
+
+a {
+  text-decoration: none;
 }
